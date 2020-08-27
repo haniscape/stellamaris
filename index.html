@@ -9,6 +9,8 @@
 ------------------------------- -->
     <link rel="stylesheet" href="./vendors/uikit/css/uikit.min.css" />
     <link rel="stylesheet" href="./dist/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
 
     <title>Document</title>
   </head>
@@ -31,7 +33,7 @@
         <div class="uk-container uk-container-center">
           <div class="uk-grid">
             <div class="uk-width-1-1">
-              <ul>
+              <ul class="uk-nav" data-uk-nav>
                 <li><a href="home">Home</a></li>
                 <li><a href="izdanja">Izdanja</a></li>
                 <li><a href="bozje-milosrde">Božje milosrđe</a></li>
@@ -198,13 +200,15 @@
               unde neque?
             </p>
 
-            <hr />
+            <hr class="uk-divider"/>
 
             <ul class="uk-pagination">
               <li>
                 <a href=""><i class="uk-icon-angle-left"></i></a>
+                <span>Sjenica na Gori</span>
               </li>
               <li>
+                <span>Ognjeni duhovi, karizme..</span>
                 <a href=""><i class="uk-icon-angle-right"></i></a>
               </li>
             </ul>
@@ -232,6 +236,7 @@
                     </button>
                   </div>
                 </li>
+                <hr class="uk-divider-small"/>
                 <li class="uk-panel uk-panel-box uk-width-1-1">
                   <img src="./dist/img/book2.jpg" alt="book 1" />
                   <div class="price">

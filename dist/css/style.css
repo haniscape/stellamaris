@@ -1,38 +1,19 @@
 body {
   background-color: #f6e9bc;
+  font-family: "Raleway", sans-serif;
 }
 
-/* --------------------------------
-Notes
---------------------------------- */
+
 
 .top-wrapper {
   height: 250px;
-  background: linear-gradient(to left, #02203c, #01303a, #007372, #00548c);
+  background: linear-gradient(to left, #02203c, #00436c, #036d85, #023641);
 }
 
 .top-wrapper .uk-container {
   background-image: url("../img/banner0.jpg");
   height: 250px;
-}
-
-.uk-container {
-  max-width: 1270px;
-}
-
-.page-heading-wrapper {
-  background-color: #fff;
-  height: 250px;
-}
-
-
-.page-heading-wrapper .page-heading {
-    padding: 50px 0 10px;
-}
-
-
-main {
-  margin-top: 20vh;
+  background-position: center;
 }
 
 nav.nav-wrapper ul {
@@ -42,9 +23,36 @@ nav.nav-wrapper ul {
 nav.nav-wrapper ul:hover {
   text-decoration: none;
 }
+.uk-container {
+  max-width: 1270px;
+}
+
+.page-heading-wrapper {
+  background-color: #fff;
+  height: 250px;
+  
+}
+
+.page-heading-wrapper .page-heading {
+  padding: 50px 0 10px;
+}
+
+.page-heading-wrapper .page-heading h1{
+    font-family: 'Average', serif;
+    font-style: italic;
+  }
+
+
+main {
+  margin-top: 20vh;
+  font-family: 'Average', serif;
+  font-style: italic;
+}
+
+
 
 article.uk-article {
-  transform: translate(0, -160px);
+  transform: translate(-35px, -210px);
 }
 
 article.uk-article hr {
@@ -70,11 +78,11 @@ div.social-icons {
   z-index: 999;
 }
 
-.social-icons .uk-icon-button,.social-icons a {
-    background: linear-gradient(to right, #c31432, #240b36);
-    color: #fff;
+.social-icons .uk-icon-button,
+.social-icons a {
+  background: linear-gradient(to right, #c31432, #240b36);
+  color: #fff;
 }
-
 
 aside {
   background-color: #f8efcd;
@@ -115,15 +123,41 @@ aside button {
   align-self: flex-end;
 }
 
+.uk-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uk-pagination li{
+    display: flex;
+    align-items: center;
+    color: #640000;
+}
+
+
+.uk-pagination > li > a {
+    font-size: 2.5rem;
+    background: none;
+    color: #444;
+    font-size: 2.5rem;
+}
+
+.uk-pagination::after,.uk-pagination::before {
+    content: none;
+ }
+
 footer {
   background-color: #fff;
   height: 55vh;
   padding-top: 70px;
 }
 
+footer .uk-width-large-2-10 {
+  padding-left: 0;
+  transform: translate(0, -20px);
+}
 
 footer .uk-width-large-2-10 img {
-    top: -19px;
-    position: relative;
-    left: -10px;
+  transform: translate(-10px, 0);
 }
